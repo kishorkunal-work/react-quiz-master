@@ -26,13 +26,10 @@ const MyQuiz = () => {
       setScore(pre => pre + 1);
     }
   }
+
   const playAgain = () => {
-    getQuestions();
-    setScore(0);
-    setOnSubmit(false);
-    setShowAnswer(false);
-    setTime(1);
-  }
+    window.location.href = '/';
+  };
 
   const ForceSubmit = () => {
     setShowAnswer(true);
